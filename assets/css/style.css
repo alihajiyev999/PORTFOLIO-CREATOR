@@ -1,0 +1,69 @@
+/* COLORS FOR WEBPAGE */
+:root {
+    --primary-color: #000;
+    --secondary: #fff;
+    --orange: #FF8A56;
+    --gray: #666;
+    --pastel-red: #FF5E69;
+    --purple: #B16CEA;
+    --blue: #3C46FF;
+    --yellow-orange: #FFA84B;
+    --footer-color: #8A95AD;
+}
+/* COLORS FOR WEBPAGE */
+
+
+@import url(/assets/css/reset.css);
+
+
+/* FONT STARTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* FONT ENDS */
+
+
+
+/* HEADER AND NAVIGATION BAR STARTS */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.6rem;
+    padding-left: 7.03rem;
+    padding-right: 7.03rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.fa-bars {
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+    header {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    header > nav {
+        display: none;
+    } 
+
+    .fa-bars {
+        display: flex;
+    }
+}
+/* RESPONSIVE */
+
+/* HEADER AND NAVIGATION BAR ENDS */
+
+/* INTERSECTION STARTS */  
