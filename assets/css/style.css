@@ -10,29 +10,33 @@
     --yellow-orange: #FFA84B;
     --footer-color: #8A95AD;
 }
-/* COLORS FOR WEBPAGE */
 
+/* COLORS FOR WEBPAGE */
 
 @import url(/assets/css/reset.css);
 
-
 /* FONT STARTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* FONT ENDS */
 
 
-
 /* HEADER AND NAVIGATION BAR STARTS */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2.6rem;
+    padding-top: 2.5rem;
     padding-left: 7.03rem;
     padding-right: 7.03rem;
 }
@@ -42,6 +46,16 @@ header nav a {
     color: var(--primary-color);
     font-size: 1rem;
     font-weight: 400;
+    padding-right: 2.5rem;
+}
+
+header>nav>a>img {
+    padding-left: 0.5rem;
+}
+
+header nav a:hover {
+    color: var(--orange);
+    transition: ease 0.2s;
 }
 
 .fa-bars {
@@ -66,7 +80,6 @@ header nav a {
     }
 }
 /* RESPONSIVE */
-
 /* HEADER AND NAVIGATION BAR ENDS */
 
 
@@ -103,6 +116,30 @@ header nav a {
     font-size: 1.38rem;
     font-weight: 400;
     color: var(--gray);
+    padding-top: 2rem;
+}
+
+.bookacall {
+    padding-top: 2.5rem;
+}
+
+.bookacall>button {
+    font-size: 1.12rem;
+    font-weight: 400;
+    color: var(--secondary);
+    background-color: var(--primary-color);
+    padding: 19px 30px;
+
+}
+
+.bookacall>a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding-left: 2.5rem;
+}
+
+.bookacall>a>img {
+    padding-left: 1.5rem;
 }
 
 .intro-rightside {
@@ -110,7 +147,7 @@ header nav a {
     display: flex;
     justify-content: flex-end;
     padding-top: 4.38rem;
-    min-width: 500px;
+    min-width: 395px;
 }
 
 @media(max-width:1365px) and (min-width:768px) {
@@ -118,16 +155,16 @@ header nav a {
         flex-basis: 100%;
         align-items: center;
     }
-}
 
-.introduction {
-    padding-left: 0;
-    padding-right: 0;
+    .introduction {
+        padding-left: 0;
+        padding-right: 0;
 
-}
+    }
 
-.intro-rightside {
-    justify-content: center;
+    .intro-rightside {
+        justify-content: center;
+    }
 }
 
 @media (max-width:768px) {
@@ -147,3 +184,6 @@ header nav a {
 }
 
 /* INTRODUCTION SECTION ENDS */
+
+
+/* TRUSTED BY SECTION STARTS */
