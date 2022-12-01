@@ -10,8 +10,12 @@
     --yellow-orange: #FFA84B;
     --footer-color: #8A95AD;
 }
+
 /* COLORS FOR WEBPAGE */
 
+* {
+    outline: 1px solid red;
+}
 
 @import url(/assets/css/reset.css);
 
@@ -22,6 +26,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 /* FONT ENDS */
 
 
@@ -54,14 +59,17 @@ header nav a {
         padding-right: 1.6rem;
     }
 
-    header > nav {
+    header>nav {
         display: none;
-    } 
+    }
 
     .fa-bars {
         display: flex;
+        font-size: 1.5rem;
+        cursor: pointer;
     }
 }
+
 /* RESPONSIVE */
 
 /* HEADER AND NAVIGATION BAR ENDS */
@@ -69,3 +77,76 @@ header nav a {
 
 
 /* INTRODUCTION SECTION STARTS */
+
+.introduction {
+    padding-left: 7.03rem;
+    padding-right: 7.03rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-leftside {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-top: 7.3rem;
+    min-width: 715px;
+}
+
+.intro-leftside>h1 {
+    font-size: 4.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.intro-leftside>h1>span {
+    color: var(--yellow-orange);
+
+}
+
+.intro-leftside p {
+    font-size: 1.38rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.intro-rightside {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4.38rem;
+    min-width: 500px;
+}
+
+@media(max-width:1365px) and (min-width:768px) {
+    .intro-leftside {
+        flex-basis: 100%;
+        align-items: center;
+    }
+}
+
+.introduction {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.intro-rightside {
+    justify-content: center;
+}
+
+@media (max-width:768px) {
+    .introduction {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .intro-leftside {
+        min-width: 400px;
+        text-align: center;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
