@@ -1,6 +1,6 @@
-*{
+/* *{
     outline:1px solid red;
-}
+} */
 
 /* COLORS FOR WEBPAGE */
 :root {
@@ -84,6 +84,7 @@ header nav a:hover {
     }
 }
 /* RESPONSIVE */
+
 /* HEADER AND NAVIGATION BAR ENDS */
 
 
@@ -118,9 +119,10 @@ header nav a:hover {
 
 .intro-leftside p {
     font-size: 1.38rem;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--gray);
     padding-top: 2rem;
+    margin: 0;
 }
 
 .bookacall {
@@ -192,14 +194,16 @@ header nav a:hover {
 
 /* TRUSTED BY SECTION STARTS */
 
-.trusted-by-section h6{
+.trusted-by-section h6 {
     text-align: center;
     font-size: 1.125rem;
     font-weight: 400;
-    
+    padding-top: 7rem;
+    margin: 0;
+
 }
 
-.trusted-by-companies{
+.trusted-by-companies {
     display: flex;
     justify-content: space-around;
     padding-top: 2.8rem;
@@ -207,20 +211,20 @@ header nav a:hover {
     padding-right: 18rem;
 }
 
-.trusted-by-company:hover{
+.trusted-by-company:hover {
     transform: scale(1.1);
     transition: ease .15s;
 
 }
 
 @media (max-width:768px) and (min-width:576px) {
-    .trusted-by-company:nth-child(odd){
+    .trusted-by-company:nth-child(odd) {
         display: none;
     }
 }
 
-@media (max-width:575px){
-    .trusted-by-company:not(:first-child){
+@media (max-width:575px) {
+    .trusted-by-company:not(:first-child) {
         display: none;
     }
 }
@@ -229,3 +233,62 @@ header nav a:hover {
 
 
 /* SERVICES SECTION STARTS */
+
+.services-section h6 {
+    text-align: center;
+    font-size: 1.38rem;
+    font-weight: 700;
+    color: var(--pastel-red);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-top: 9.8rem;
+    margin: 0;
+}
+
+.services-section h1 {
+    text-align: center;
+    font-size: 3.38rem;
+    font-weight: 700;
+    padding-top: 1.25rem;
+    margin: 0;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7.3rem;
+    padding-left: 12.25rem;
+    padding-right: 12.25rem;
+    flex-wrap: nowrap;
+
+}
+
+.service {
+min-width:247px;
+}
+
+.service h2 {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.service p {
+    padding-top: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin: 0;
+}
+
+.service ul {
+    padding-top: 1.25rem;
+    padding-left: 1rem;
+    list-style: square;
+    font-weight: 700;
+    margin: 0;
+}
+
+.service ul li {
+    padding-top: 2rem;
+}
