@@ -1,3 +1,7 @@
+*{
+    outline:1px solid red;
+}
+
 /* COLORS FOR WEBPAGE */
 :root {
     --primary-color: #000;
@@ -187,3 +191,41 @@ header nav a:hover {
 
 
 /* TRUSTED BY SECTION STARTS */
+
+.trusted-by-section h6{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    
+}
+
+.trusted-by-companies{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.8rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
+}
+
+.trusted-by-company:hover{
+    transform: scale(1.1);
+    transition: ease .15s;
+
+}
+
+@media (max-width:768px) and (min-width:576px) {
+    .trusted-by-company:nth-child(odd){
+        display: none;
+    }
+}
+
+@media (max-width:575px){
+    .trusted-by-company:not(:first-child){
+        display: none;
+    }
+}
+
+/* TRUSTED BY SECTION ENDS */
+
+
+/* SERVICES SECTION STARTS */
