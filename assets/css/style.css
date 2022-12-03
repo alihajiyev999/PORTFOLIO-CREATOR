@@ -2,6 +2,7 @@
     outline:1px solid red;
 } */
 
+
 /* COLORS FOR WEBPAGE */
 :root {
     --primary-color: #000;
@@ -725,7 +726,7 @@ header nav a:hover {
 }
 
 .work-bottom>span:nth-child(2) {
-    margin-right: 40px;
+    margin-right: 2.5rem;
 }
 
 @media(max-width:910px) {
@@ -735,3 +736,199 @@ header nav a:hover {
 }
 
 /* EDUCATION-WORK SECTION ENDS */
+
+
+
+/* TESTIMONIALS SECTION STARTS */
+.testimonials-section {
+    padding: 0px 131px 160px 113px;
+}
+
+.testimonials-section>p {
+    font-weight: 700;
+    font-size: 1.38rem;
+    color:var(--blue);
+    letter-spacing: .25rem;
+    margin: 0;
+    padding-bottom: 1.25rem;
+}
+
+.testimonials-section>h5 {
+    font-weight: 700;
+    font-size: 3.4rem;
+    margin: 0;
+    padding-bottom: 5.3rem;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.testimonial>p {
+    font-weight: 700;
+    font-size: 2.25rem;
+    width: 565px;
+    margin: 0;
+    padding: 32px 0px 109px 0px;
+}
+
+.testimonial>h6 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.founder {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.faq-section {
+    background:var(--primary-color);
+}
+
+.faq-section h5, p {
+    color: var(--secondary)
+}
+
+.faq {
+    text-align: center;
+    padding: 78px 0px 50px;
+}
+
+.faq>h5 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color:var(--yellow-orange);
+    letter-spacing: 4px;
+    margin: 0;
+    padding-bottom: 1.25rem;
+}
+
+.faq>p {
+    font-weight: 700;
+    font-size: 3.4rem;
+    margin: 0;
+}
+
+.questions {
+    padding: 0px 113px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question>p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
+}
+
+footer {
+    padding: 250px 113px 164px;
+    background:var(--primary-color);
+}
+
+.kickass h2 {
+    font-weight: 700;
+    color: #FFF;
+    font-size: 3.4rem;
+    margin: 0;
+}
+
+.kickass span {
+    color: var(--blue);
+}
+
+.info {
+    padding-top: 5.95rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-left-side {
+    padding-top: .5px;
+}
+
+.info-left-side p {
+    margin: 0;
+    color:var(--footer-color)
+}
+
+.info-left-side>p {
+    padding: 18px 0px 17px;
+}
+
+.email {
+    display: flex;
+}
+
+.email>p {
+    font-size: 1 rem;
+    padding-left: .38rem;
+}
+
+.info-right-side {
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+}
+
+.info-right-side p {
+    margin: 0;
+    padding-bottom: 2.5rem;
+    font-weight: 700;
+    font-size: 1.13rem;
+}
+
+.rights {
+    display: flex;
+    padding-top: 6.3rem;
+}
+
+.rights p {
+    color:var(--footer-color);
+    margin: 0;
+    padding-right: .63rem;
+}
+
+@media (max-width:768px) {
+    .navbar {
+        display: none;
+    }
+
+    .fa-bars {
+        display: flex;
+    }
+
+    .intro-left-side p {
+        width: 500px;
+    }
+
+    .projects-section-top {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects-text {
+        padding-bottom: 3.1rem;
+    }
+
+    .projects-section-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-section-bottom {
+        padding-left: 1.9rem;
+    }
+}
+
+/* TESTIMONIALS SECTION ENDS */
